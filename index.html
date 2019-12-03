@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cardiovascular Disease Prediction Using Risk Fectors</title>
+
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/predictor.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <script src="js/d3.js"></script>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Cardiovascular Disease Prediction Using Risk Fectors</a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+            <li><a href="#" data-nav-section="features">Information</a></li>
+            <li><a href="#" data-nav-section="predict">Predict</a></li>
+            <li><a href="#" data-nav-section="analysis">Analysis</a></li>
+            <li><a href="#" data-nav-section="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant" style="background-image: url(img/2.jpg);" data-section="home" data-stellar-background-ratio="0.5"  id="home">
+      <div class="container">
+        <div class="row intro-text">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h1 class="probootstrap-heading probootstrap-animate" style="color:#E0F7FA">Predict your chance of having a Cardiovascular Disease because prevention is better than cure!</h1>
+            <div class="probootstrap-subheading center">
+              <p class="probootstrap-animate"><a href="#predict" role="button" class="btn btn-primary">Check Now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="probootstrap-section probootstrap-bg-light" id="features" data-section="features">
+      <div class="container">
+        <div class="row text-center mb100">
+          <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+            <h2 class="mb30 text-black probootstrap-heading">Information</h2>
+            <p>In this section you will find meny information related to cardiovascular disease.</p>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row mb100">
+          <div class="col-md-8 probootstrap-animate">
+            <img src="img/info.png" alt="GitHub Page" class="img-responsive probootstrap-shadow">
+          </div>
+          <div class="col-md-4 probootstrap-section-heading">
+            <h3 class="text-primary probootstrap-heading-2">Causes Of Cardiovascualr Disease</h3>
+            <p><p>Cardiovascular disease is caused by damage to all or part of the Cardiovascular, damage to the coronary arteries, or a poor supply of nutrients and oxygen to the organ.
+                     There are a number of lifestyle choices that can increase the risk of Cardiovascular disease. These include:</p></p>
+            <ul class="probootstrap-list">
+              <li class="probootstrap-check">High blood pressure and cholestero </li>
+              <li class="probootstrap-check">Smoking</li>
+			    <li class="probootstrap-check">Overweight and obesity</li>
+				  <li class="probootstrap-check">Diabetes</li>
+				    <li class="probootstrap-check">Family history</li>
+					<li class="probootstrap-check">A diet of junk food</li>					          
+			  <li class="probootstrap-check">Age <a href="https://www.medicalnewstoday.com/articles/237191.php#causes" class="probootstrap-link" target="_blank">Read More </a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row mb100">
+          <div class="col-md-4 probootstrap-section-heading">
+            <h3 class="text-primary probootstrap-heading-2">Symptoms of cardiovascular disease </h3>
+            <p><p>The symptoms of Cardiovascular disease depend on which condition is affecting an individual.However, common symptoms include:</p></p>
+            <ul class="probootstrap-list">
+              <li class="probootstrap-check">Chest pain</li>
+              <li class="probootstrap-check">Breathlessness</li>
+			  <li class="probootstrap-check">Cardiovascular palpitations <a href="https://www.medicalnewstoday.com/articles/237191.php#symptoms" class="probootstrap-link" target="_blank">Read More</a></li>
+            </ul>
+          </div>
+          <div class="col-md-8 probootstrap-animate">
+            <p><img src="img/symptom.jpg" alt="Analysis GitHub Page" class="img-responsive probootstrap-shadow"></p>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row mb100">
+          <div class="col-md-8 probootstrap-animate">
+            <p><img src="img/prevent.jpg" alt="Dataset" class="img-responsive probootstrap-shadow"></p>
+          </div>
+          <div class="col-md-4 probootstrap-section-heading">
+            <h3 class="text-primary probootstrap-heading-2">Strategies to prevent Cardiovascular disease</h3>
+            <p><p>  </p></p>
+            <ul class="probootstrap-list">          
+              <li class="probootstrap-check">Don't smoke or use tobacco</li>
+              <li class="probootstrap-check">Get moving: Aim for at least 30 to 60 minutes of activity daily</li>
+			  <li class="probootstrap-check">Eat a Cardiovascular-healthy diet</li>
+			  <li class="probootstrap-check">Maintain a healthy weight</li>
+			  <li class="probootstrap-check">Get good quality sleep  </li>
+			  <li class="probootstrap-check">Manage stress</li>
+			  <li class="probootstrap-check">Get regular health screenings<a href="https://www.mayoclinic.org/diseases-conditions/Cardiovascular-disease/in-depth/heart-disease-prevention/art-20046502" class="probootstrap-link" target="_blank">Read More </a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- END row -->
+
+        <!-- END row -->
+      </div>
+    </section>
+    <!-- END section -->
+
+    </section>
+    <!-- END section -->
+
+    <section class="probootstrap-section" data-section="predict" id="predict">
+      <div class="container">
+        <div class="row text-center mb100">
+          <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+            <h2 class="mb30 text-black probootstrap-heading">Predict your Chance of Having a Heart Disease</h2>
+            <p>Enter the appropriate values of symptoms you face. Get the chances of you contracting cardiovascular disease based on those values.</p>
+          </div>
+        </div>
+        <!-- END row -->
+        <!-- Main Div -->
+        <div id="parent">
+              <div id="wrapper">
+                  <center>
+                      <h1 class="text-black probootstrap-heading">Cardiovascular Disease Risk Predictor</h1>
+                  </center>
+                  <div class="child1">
+                      <table class="naked_table">
+                          <tr>
+                              <td>
+                                  <label class="before_slider">
+                                      Sex (0=female,1=male)</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="0" max="1" step="1"
+                                             value="0" id="nSex1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="0" max="1" step="1"
+                                             value="0" id="nSex2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>
+
+                          <tr>
+                              <td><label for="nage" class="before_slider">
+                                  Age (20 - 80)</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="20" max="80" step="all"
+                                             value="20" id="nage1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="20" max="80" step="all"
+                                             value="20" id="nage2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>						  
+                          <tr>
+                              <td><label for="nbp" class="before_slider">
+                                  Blood Pressure (100 - 200 mmHg)</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="100" max="200" step="all"
+                                             value="100" id="nbp1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="100" max="200" step="all"
+                                             value="100" id="nbp2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>
+
+                          <tr>
+                              <td><label for="nbc" class="before_slider">
+                                  Blood Cholesterol (71 - 202)</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="71" max="202" step="all"
+                                             value="71" id="nbc1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="71" max="202" step="all"
+                                             value="71" id="nbc2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>
+                          <tr>
+                              <td><label for="nhereditary" class="before_slider">
+                                  Hereditary ( Family Member diagnosed with HD -Yes (1) Otherwise –No (0) )</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="0" max="1" step="1"
+                                             value="0" id="nhereditary1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="0" max="1" step="1"
+                                             value="0" id="nhereditary2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>
+						                            <tr>
+                              <td><label for="nsmoking" class="before_slider">
+                                  Smoking ( Yes (1) or No (0) )</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="0" max="1" step="1"
+                                             value="0" id="nsmoking1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="0" max="1" step="1"
+                                             value="0" id="nsmoking2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>
+
+                          <tr>
+                              <td><label for="nobesity" class="before_slider">
+                                  Obesity ( Yes (1) or No (0) )</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="0" max="1" step="1"
+                                             value="0" id="nobesity1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="0" max="1" step="1"
+                                             value="0" id="nobesity2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>
+                          <tr>
+                              <td><label for="nstress" class="before_slider">
+                                  Do you feel Stress ( Yes (1) or No (0) )</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="0" max="1" step="1"
+                                             value="0" id="nstress1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="0" max="1" step="1"
+                                             value="0" id="nstress2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>
+						  
+						  <tr>
+                              <td><label for="nalcohol" class="before_slider">
+                                  Alcohol Intake ( Yes (1) or No (0) )</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="0" max="1" step="1"
+                                             value="0" id="nalcohol1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="0" max="1" step="1"
+                                             value="0" id="nalcohol2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>
+						  <tr>
+                              <td><label for="nphysical" class="before_slider">
+                                  Physical Activity (  Normal (0) or High (1) )</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="0" max="1" step="all"
+                                             value="0" id="nphysical1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="0" max="1" step="all"
+                                             value="0" id="nphysical2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>						  <tr>
+                              <td><label for="ndiabetes" class="before_slider">
+                                  Diabetes ( Yes (1) or No (0) )</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="0" max="1" step="all"
+                                             value="0" id="ndiabetes1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="0" max="1" step="all"
+                                             value="0" id="ndiabetes2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>						  
+						  <tr>
+                              <td><label for="ndiet" class="before_slider">
+                                  Diet ( Normal (0) or Good (1) ))</label></td>
+                              <td class="input_slider">
+                                  <form class="slider_input">
+                                      <input type="range" class="hd-slider-width" name="amountRange" min="0" max="1" step="all"
+                                             value="0" id="ndiet1" oninput="this.form.amountInput.value=this.value" />
+                                      <input type="number" class="hd-number-width" name="amountInput" min="0" max="1" step="all"
+                                             value="0" id="ndiet2" oninput="this.form.amountRange.value=this.value" />
+                                  </form></td>
+                          </tr>						  
+                          <tr>
+                              <td></td>
+                              <td class="input_slider">
+                                  <input type="button" class="btn btn-primary" value="Reset All Sliders" onclick="updateOne(val01,-1)"/>
+                              </td>
+                          </tr>
+                      </table>
+                  </div>
+                  <div class="child2">
+                      <script>
+                          var width  = 100;
+                          var height = 540;
+
+                          var holder = d3.select(".child2")
+                              .append("svg")
+                              .attr("width", width)
+                              .attr("height", height);
+
+                          // draw a rectangle
+                          var y0 = 20;
+                          var height0 = 520;
+                          holder.append("rect")
+                              .attr("x", 5)
+                              .attr("y", y0+height0)
+                              .style("fill", "rgb(0,255,0)")
+                              .attr("height", 0)
+                              .attr("width", 90);
+
+                          // draw a container rectangle
+                          holder.append("rect")
+                              .attr("x", 5)
+                              .attr("y", y0)
+                              .style("fill", "none")
+                              .style("stroke", "lightblue")
+                              .style("stroke-width",4)
+                              .attr("height",height0)
+                              .attr("width",90);
+
+                          // add text inside rectangle
+                          holder.append("text")
+                              .text("0.00%")
+                              .attr("x",12)
+                              .attr("y",y0+height0-10)
+                              .attr("fill","black")
+                              .attr("font-family","Verdana")
+                              .attr("font-size","20");
+
+                          // initialize
+                          var val01 = document.getElementById("nSex1").value;
+                          var val02 = document.getElementById("nbp1").value;
+                          var val03 = document.getElementById("nbc1").value;
+                          var val04 = document.getElementById("nhereditary1").value;
+                          var val05 = document.getElementById("nsmoking1").value;
+                          var val06 = document.getElementById("nobesity1").value;
+                          var val07 = document.getElementById("nstress1").value;
+						  var val08 = document.getElementById("nalcohol1").value;
+						  var val09 = document.getElementById("nphysical1").value;
+						  var val10 = document.getElementById("ndiabetes1").value;
+						  var val11 = document.getElementById("ndiet1").value;
+						  var val12 = document.getElementById("nage1").value;
+						 
+                          updateOne(val01,0);
+
+                          // Check for changes in the inputs and update output bar
+                          d3.select("#nSex1").on("input", function() {updateOne(+this.value,1);});
+                          d3.select("#nSex2").on("input", function() {updateOne(+this.value,1);});
+                          d3.select("#nbp1").on("input", function() {updateOne(+this.value,2);});
+                          d3.select("#nbp2").on("input", function() {updateOne(+this.value,2);});
+                          d3.select("#nbc1").on("input", function() {updateOne(+this.value,3);});
+                          d3.select("#nbc2").on("input", function() {updateOne(+this.value,3);});
+                          d3.select("#nhereditary1").on("input", function() {updateOne(+this.value,4);});
+                          d3.select("#nhereditary2").on("input", function() {updateOne(+this.value,4);});
+                          d3.select("#nsmoking1").on("input", function() {updateOne(+this.value,5);});
+                          d3.select("#nsmoking2").on("input", function() {updateOne(+this.value,5);});
+                          d3.select("#nobesity1").on("input", function() {updateOne(+this.value,6);});
+                          d3.select("#nobesity2").on("input", function() {updateOne(+this.value,6);});
+                          d3.select("#nstress1").on("input", function() {updateOne(+this.value,7);});
+                          d3.select("#nstress2").on("input", function() {updateOne(+this.value,7);});
+						  d3.select("#nalcohol1").on("input", function() {updateOne(+this.value,8);});
+                          d3.select("#nalcohol2").on("input", function() {updateOne(+this.value,8);});
+						  d3.select("#nphysical1").on("input", function() {updateOne(+this.value,9);});
+                          d3.select("#nphysical2").on("input", function() {updateOne(+this.value,9);});
+						  d3.select("#ndiabetes1").on("input", function() {updateOne(+this.value,10);});
+                          d3.select("#ndiabetes2").on("input", function() {updateOne(+this.value,10);});
+						  d3.select("#ndiet1").on("input", function() {updateOne(+this.value,11);});
+                          d3.select("#ndiet2").on("input", function() {updateOne(+this.value,11);});
+						  d3.select("#nage1").on("input", function() {updateOne(+this.value,12);});
+                          d3.select("#nage2").on("input", function() {updateOne(+this.value,12);});
+
+                          // Update the Cardiovascular disease probability
+                          function updateOne(value,index) {
+
+                              if (index == 1) {
+                                  val01 = value;
+                              } else if (index == 2) {
+                                  val02 = value;
+                              } else if (index == 3) {
+                                  val03 = value;
+                              } else if (index == 4) {
+                                  val04 = value;
+                              } else if (index == 5) {
+                                  val05 = value;
+                              } else if (index == 6) {
+                                  val06 = value;
+                              } else if (index == 7) {
+                                  val07 = value;
+								}else if (index == 8) {
+                                  val08 = value;
+                              }else if (index == 9) {
+                                  val09 = value;
+                              } else if (index == 10) {
+                                  val10 = value;
+                              } else if (index == 11) {
+                                  val11 = value;
+                              }  else if (index == 12) {
+                                  val12 = value;
+                              } 
+							  else if (index == -1) {
+                                  // Set everything back to default state:
+                                  val01 = document.getElementById("nSex1").defaultValue;
+                                  document.getElementById("nSex1").value = val01;
+                                  document.getElementById("nSex2").value = val01;
+                                  val02 = document.getElementById("nbp1").defaultValue;
+                                  document.getElementById("nbp1").value = val02;
+                                  document.getElementById("nbp2").value = val02;
+                                  val03 = document.getElementById("nbc1").defaultValue;
+                                  document.getElementById("nbc1").value = val03;
+                                  document.getElementById("nbc2").value = val03;
+                                  val04 = document.getElementById("nhereditary1").defaultValue;
+                                  document.getElementById("nhereditary1").value = val04;
+                                  document.getElementById("nhereditary2").value = val04;
+                                  val05 = document.getElementById("nsmoking1").defaultValue;
+                                  document.getElementById("nsmoking1").value = val05;
+                                  document.getElementById("nsmoking2").value = val05;
+                                  val06 = document.getElementById("nobesity1").defaultValue;
+                                  document.getElementById("nobesity1").value = val06;
+                                  document.getElementById("nobesity2").value = val06;
+                                  val07 = document.getElementById("nstress1").defaultValue;
+                                  document.getElementById("nstress1").value = val07;
+                                  document.getElementById("nstress2").value = val07;
+								  val08 = document.getElementById("nalcohol1").defaultValue;
+                                  document.getElementById("nalcohol1").value = val08;
+                                  document.getElementById("nalcohol2").value = val08;
+								  val09 = document.getElementById("nphysical1").defaultValue;
+                                  document.getElementById("nphysical1").value = val09;
+                                  document.getElementById("nphysical2").value = val09;
+								  val10 = document.getElementById("ndiabetes1").defaultValue;
+                                  document.getElementById("ndiabetes1").value = val10;
+                                  document.getElementById("ndiabetes2").value = val10;
+								  val11 = document.getElementById("ndiet1").defaultValue;
+                                  document.getElementById("ndiet1").value = val11;
+                                  document.getElementById("ndiet2").value = val11;
+								  val12 = document.getElementById("nage1").defaultValue;
+                                  document.getElementById("nage1").value = val12;
+                                  document.getElementById("nage2").value = val12;
+                              }
+
+                              // Standardize the continuous features:
+                              var sbp_val     = (val02-133.172757)/16.777268;
+                              var sbc_val     = (val03-214.754153)/34.353156;
+							  var sage_val     = (val12-43.684385)/14.028901;
+                              
+
+                              // Disentangle the categorical features:
+
+							  var hereditary_contr = 0.0;
+                              if(val04 == 1) {hereditary_contr = 2.33;}
+							  var smoking_contr = 0.0;
+                              if(val05 == 1) {hereditary_contr = 1.250;}
+                              var obesity_contr = 0.0;
+                              if (val06 == 1) {obesity_contr = 2.4;}
+                              var stress_contr = 0.0;
+                              if(val07 == 1) {stress_contr = 0.634636;}
+							  var alcohol_contr = 0.0;
+                              if(val08 == 1) {alcohol_contr = 2.6350;}
+							  var physical_contr = 0.0;
+                              if(val09 == 1) {physical_contr = -0.9527;}
+							  var diabetes_contr = 0.0;
+                              if(val10 == 1) {diabetes_contr = 0.576755;}
+							  var diet_contr = 0.0;
+                              if(val11 == 1) {diet_contr = -1.930288;}
+					
+                              // Compute log-odds, then probability:
+                              var scprod = 0.026264*val01 + 0.02626*sage_val+0.049682*sbp_val + 0.009295*sbc_val + obesity_contr + stress_contr+ hereditary_contr + smoking_contr+ alcohol_contr+physical_contr+diabetes_contr+diet_contr;
+                              var drec   = 1.0/(1.0+Math.exp(-scprod));
+                              var drecs  = height0*drec;
+                              drec       *= 100;
+
+                              // Update plot:
+                              rcolor     = percentToRGB(drec);
+                              holder.select("rect")
+                                  .attr("y",y0+height0-drecs)
+                                  .attr("height",drecs)
+                                  .style("fill", rcolor);
+
+                              holder.select("text")
+                                  .text(function(){return parseFloat(Math.round(drec * 100) / 100).toFixed(2)+"%";});
+
+                          }
+
+                          function percentToRGB(percent) {
+                              if (percent === 100) {
+                                  percent = 99
+                              }
+                              var r, g, b;
+
+                              if (percent < 50) {
+                                  // green to yellow
+                                  r = Math.floor(255 * (percent / 50));
+                                  g = 255;
+
+                              } else {
+                                  // yellow to red
+                                  r = 255;
+                                  g = Math.floor(255 * ((50 - percent % 50) / 50));
+                              }
+                              b = 0;
+
+                              return "rgb(" + r + "," + g + "," + b + ")";
+                          }
+                      </script>
+                  </div>
+              </div>
+              <div class="clear"></div>
+          </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+     <section class="probootstrap-section probootstrap-bg-light" data-section="analysis" id="analysis">
+      <div class="container">
+        <div class="row text-center mb100">
+          <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+            <h2 class="mb30 text-black probootstrap-heading"> Results Analysis</h2>
+            <p>If your percentage is more then 80% then you may concern with a doctor</p>
+            <img src="img/images.jpg" class="img-responsive probootstrap-shadow" alt="Flow of Analysis">
+          </div>
+        </div>
+        <!-- END row -->
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="probootstrap-section probootstrap-bg-light" data-section="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form action="" class="probootstrap-form">
+              <h2 class="text-black mt0">Get Information About  Cardio Sergeants</h2>
+            			  <li class="probootstrap-check"><a href="http://bestdoctorbd.com/best-cardiac-surgeon-bangladesh/" class="probootstrap-link" target="_blank">Click Here </a></li>
+                          
+          </div><img src="img/1.jpg" class="img-responsive probootstrap-shadow" alt="Flow of Analysis">
+        </div>
+      </div>
+    </section>
+
+    <footer class="probootstrap-footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="#home" class="probootstrap-link">Back to top <span class="icon icon-align-top"></span></a> <br>
+            &copy; 2019. All Rights Reserved. <br> Designed Istyak Ahamed; Developed by <a href="https://github.com/istyak/hd" target="_blank">Istyak Ahamed <span class="icon icon-github"></span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
